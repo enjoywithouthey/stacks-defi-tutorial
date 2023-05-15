@@ -1,0 +1,32 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://api.testnet.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: magic-beans
+            expected-sender: STB8E0SMACY4A6DCCH4WE48YGX3P877407QW176V
+            cost: 33918140
+            path: contracts/magic-beans.clar
+            anchor-block-only: true
+            clarity-version: 2
+        - contract-publish:
+            contract-name: magic-beans-lp
+            expected-sender: STB8E0SMACY4A6DCCH4WE48YGX3P877407QW176V
+            cost: 33924531
+            path: contracts/magic-beans-lp.clar
+            anchor-block-only: true
+            clarity-version: 2
+        - contract-publish:
+            contract-name: beanstalk-exchange
+            expected-sender: STB8E0SMACY4A6DCCH4WE48YGX3P877407QW176V
+            cost: 33986313
+            path: contracts/beanstalk-exchange.clar
+            anchor-block-only: true
+            clarity-version: 2
+      epoch: "2.1"
