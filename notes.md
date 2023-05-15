@@ -1,6 +1,7 @@
-# Stacks-defi-tutotrial notes
+# Stacks-defi-tutorial notes
 
 Tutorial by Pointergg
+[LINK](https://www.pointer.gg/tutorials/build-a-dex-with-stacks/3797cff6-aeea-41dd-b218-521b93bd874b)
 
 5/14/2023
 - Initial Testnet deployment from enjoywithouthy/stacks-dex-testnet
